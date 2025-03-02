@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi dan Operasi Bilangan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Konversi dan Operasi Bilangan</h1>
+    <h2>Mochamad Eka Miharja</h2>
+    <div class="container">
+        <!-- Konversi Desimal ke Biner -->
+        <div class="converter">
+            <h2>Desimal ke Biner</h2>
+            <label for="decimal">Desimal:</label>
+            <input type="number" id="decimal" placeholder="Masukkan bilangan desimal">
+            <button onclick="decimalToBinary()">Konversi ke Biner</button>
+            <p id="binaryResult"></p>
+        </div>
+
+        <!-- Konversi Biner ke Desimal -->
+        <div class="converter">
+            <h2>Biner ke Desimal</h2>
+            <label for="binary">Biner:</label>
+            <input type="number" id="binary" placeholder="Masukkan bilangan biner">
+            <button onclick="binaryToDecimal()">Konversi ke Desimal</button>
+            <p id="decimalResult"></p>
+        </div>
+
+        <!-- Operasi Pertambahan dan Pengurangan Biner -->
+        <div class="converter">
+            <h2>Operasi Biner</h2>
+            <label for="binary1">Biner 1:</label>
+            <input type="text" id="binary1" placeholder="Masukkan bilangan biner">
+            <label for="binary2">Biner 2:</label>
+            <input type="text" id="binary2" placeholder="Masukkan bilangan biner">
+            <button onclick="addBinary()">Tambah</button>
+            <button onclick="subtractBinary()">Kurang</button>
+            <p id="operationResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
